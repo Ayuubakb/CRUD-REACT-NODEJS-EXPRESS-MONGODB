@@ -1,0 +1,322 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --famPara:'Arial';
+  --famTitle:'Franklin Gothic Medium';
+  --color:rgba(35,35,35);
+}
+.link{
+  text-decoration: none;
+}
+.link:active , .link:visited{
+  color:rgba(35,35,35)
+}
+.loginPage button , .signupPage button{
+  padding: 8px 15px;
+  background-color: blanchedalmond;
+  font-family: var(--famPara);
+  color: var(--color);
+  border: solid 4px bisque;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.loginPage{
+  width: max(35%, 350px);
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 8px bisque;
+  border-radius: 30px;
+  background-color: beige;
+}
+.loginPage form{
+  width: 70%;
+  margin-left: 15%;
+}
+.loginPage h1{
+  font-family: var(--famTitle);
+  font-size: 25px;
+  color:var(--color);
+  margin-bottom: 15px;
+}
+.inputContainer{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer input{
+  border: solid 2px bisque;
+  border-radius: 10px;
+  padding: 4px 8px;
+  outline: none;
+}
+.inputContainer label{
+  font-family: var(--famPara);
+  color: var(--color);
+  font-size: 17px;
+}
+.loginPage p{
+  color: var(--color);
+  text-decoration: none;
+  font-family: var(--famPara);
+}
+.loginPage span{
+  color: orangered;
+  font-family: var(--famTitle);
+}
+.err{
+  padding: 8px;
+  font-family: var(--famTitle);
+  font-size: 14px;
+  color: var(--color);
+  width: 100%;
+  text-align: center;
+  background-color: bisque;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid 1px orangered;
+}
+.Board{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-rows: 100%;
+  gap: 5%;
+}
+.leftBar{
+  height: 100%;
+  background-color: bisque;
+  border-right: solid 4px beige;
+  box-shadow: 0px 2px 10px beige;
+}
+.leftBar div:not(.icons){
+  padding: 8px 15px;
+  padding-bottom: 15px;
+  font-size: 21px;
+  border-bottom: solid 1px orangered;
+  font-family: var(--famPara);
+  text-align: center;
+  color: rgb(66, 66, 66);
+  background-color: white;
+}
+.leftBar h1{
+  font-size: 25px;
+  font-family: var(--famTitle);
+  color: rgb(66, 66, 66);
+  padding: 12px 12px;
+  text-align: center;
+  border: solid 3px beige;
+  background-color: white;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.leftBar .icons{
+  margin-top: 45vh;
+  border: solid 2px orangered;
+  background-color: white;
+}
+.leftBar .icons div{
+  border: none;
+}
+.Board .Main{
+  background-color:bisque;
+  border-radius: 25px;
+  border: solid 3px beige;
+  box-shadow: 0px 2px 10px beige;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.personal .imgContainer{
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.personal .imgContainer span{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(254, 206, 146);
+  border: solid 4px white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.personal .imgContainer img{
+  width: 100%;
+  height: 100%;
+object-fit: cover;
+}
+.personal .header{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 5px beige;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.personal .header h1{
+  padding: 15px 25px ;
+  background-color: white;
+  border: solid 3px beige;
+  font-family: var(--famTitle);
+  color: rgba(35,35,35);
+  border-radius: 10px;
+}
+.personal .bottom{
+  border: solid 5px beige;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 20px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.personal .bottom p{
+  font-size: 20px;
+  color: rgba(35,35,35);
+  font-family: var(--famPara);
+  padding: 10px;
+}
+.personal .bottom span{
+  font-size: 22px;
+  color: rgb(76, 76, 76);
+}
+.personal .bottom input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 22px;
+  color: rgb(76, 76, 76);
+}
+.personal .edit div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.editBtn{
+  padding: 5px 15px;
+  background-color: rgb(145, 198, 145);
+  border-radius: 10px;
+  border: solid 2px white;
+  font-family: var(--famPara);
+  cursor: pointer;
+}
+.save{
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-left: 90%;
+  margin-top: 15px;
+}
+.delete{
+  padding: 25px;
+}
+.delete div{
+  margin-bottom: 25px;
+}
+.delete input{
+  padding: 8px 18px;
+  border: solid 3px beige;
+  border-radius: 10px;
+  outline: none;
+}
+.delete button{
+  background-color: rgb(165, 77, 77);
+  color: beige;
+  border: solid 3px beige;
+  font-family: var(--famPara);
+  font-size: 17px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.delete button:not(:disabled){
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.aff{
+  padding: 5px;
+  background-color: rgb(103, 241, 103);
+  border: solid 2px bisque;
+  border-radius: 10px;
+  font-family: var(--famTitle);
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Unauthorized .topUn h1{
+  font-family: var(--famTitle);
+  font-size: 30px;
+  text-align: center;
+  color: rgb(165, 77, 77);
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.Unauthorized .topUn .imgContainer{
+  width: 70%;
+  height: 450px;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+.Unauthorized .topUn img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Unauthorized .bottomUn{
+  width: 100%;
+  text-align: center;
+}
+.Unauthorized .bottomUn button{
+  margin-left: 40px;
+  padding: 8px 15px;
+  border: solid 3px rgb(195, 7, 7);
+  border-radius: 10px;
+  background-color: rgb(165, 77, 77);
+  color: white;
+  font-size: 17px;
+  font-family: var(--famPara);
+}
+.Unauthorized .bottomUn .log{
+  background-color: rgb(165, 165, 17);
+  color: white;
+}
+.wait div{
+  margin-top: 45vh;
+  margin-left: 45vw;
+  width: 40px;
+  height: 40px;
+  border: solid 3px rgb(246, 179, 97);
+  position: relative;
+}
+.wait div span{
+  position: absolute;
+  top: -4px;
+  width: 7px;
+  height: 7px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: orangered;
+  animation: circulate 1s ease 0s infinite ;
+}
+@keyframes circulate {
+  0%{top: -6px;left: -7px;}
+  25%{top: -6px;left: 90%;}
+  50%{top: 85%;left: 90%;}
+  75%{top: 85%;left: -7px;}
+  100%{top: -6px;left: -7px;}
+}
